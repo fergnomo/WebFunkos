@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+.container {
+    background-color: #f5f3f3;
+}
+
+.container nav {
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.nombre-pagina{
+    font-size: 7.5rem;
+    margin: 0 0 0 0;
+    color: rgb(30, 142, 194)
+}
+
+.container nav i:hover>.buy-card {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+}
+
+.nav-card {
+    display: none;
+}
+
+.nav-card li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container nav i:hover .nav-card {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    border-bottom: solid thin #e1e1e1;
+}
+
+.container nav i:hover .buy-card>button {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.container nav i:hover .buy-card>button:hover {
+    border: solid thin #494848;
+    transition: all 0.4s;
+}
+
+.container nav button {
+    display: none;
+}
+
+.container nav i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    max-width: 1250px;
+    justify-content: center;
+    margin: auto;
+    gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    padding-bottom: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    border: solid thin #e1e1e1;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+    border-radius: 10px 10px 0 0;
+    
+}
+.item:hover{
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.15);
+    transition: all .55s;
+ }
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.precio p {
+    font-size: 1, 8rem;
+}
+
+.precio p:first-child {
+    text-decoration: line-through;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 1.6rem;
+}
+
+.info p {
+    font-size: 1.5rem;
+}
+
+.info h3,
+.info p {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.info button {
+    padding: 1rem;
+    width: 100%;
+    background-color: #33c3f0;
+    border: none;
+    outline: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.info button:hover {
+    background-color: #2da0c3;
+    transition: all 0.3s;
+}
+
+/*Acomodar elementos carritos de compra*/
+.lista-funkos {
+    display: none;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+    border-top: solid thin gray;
+}
+
+.container nav i:hover .buy-card > .lista-funkos {
+    display: flex;
+}
+
+
+.lista-funkos img {
+    width: 100px;
+}
+
+.lista-funkos p {
+    width: 300px;
+    font-size: 1.3rem;
+}
+
+.lista-funkos p:nth-child(4) {
+    padding-left: 40px;
+}
+
+.lista-funkos p:last-child span {
+    background-color: rgb(201, 47, 47);
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+}
