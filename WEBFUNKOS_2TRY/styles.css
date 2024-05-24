@@ -9,10 +9,13 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: #DDD0C8
+}
 
 
 .container {
-    background-color: #f5f3f3;
+    background-color: #DDD0C8;
 }
 
 .container nav {
@@ -21,16 +24,31 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
-    background-color: #fff;
-    margin-bottom: 25px;
-    color: #333;
+    padding: 8px;
+    background-color: #c2aea2;
+    margin-bottom: 15px;
+    color: #323232;
 }
 
 .nombre-pagina{
-    font-size: 7.5rem;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 999;
+    font-size: 7rem;
     margin: 0 0 0 0;
-    color: rgb(30, 142, 194)
+    color: #323232;
+    cursor: default;
+}
+
+.tienda-funkos p {
+    display: flex;
+    justify-content: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #323232;
+    cursor: default;
+    text-align: center;
 }
 
 .container nav i:hover>.buy-card {
@@ -38,7 +56,7 @@ html {
     height: 400px;
     position: absolute;
     right: 0;
-    background-color: #fff;
+    background-color: #DDD0C8;
 }
 
 .nav-card {
@@ -51,12 +69,20 @@ html {
     font-weight: bold;
 }
 
+.container nav i:hover > .buy-card {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    background-color: #DDD0C8;
+}
+
 .container nav i:hover .nav-card {
     font-size: 1.4rem;
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
-    border-bottom: solid thin #e1e1e1;
+    border-bottom:color(from color srgb r g b);
 }
 
 .container nav i:hover .buy-card>button {
@@ -65,13 +91,13 @@ html {
     padding: 1rem;
     margin: 10px auto;
     background-color: transparent;
-    border: solid thin #e1e1e1;
-    color: #494848;
+    border: solid thin #b4a79f;
+    color: #323232;
     cursor: pointer;
 }
 
 .container nav i:hover .buy-card>button:hover {
-    border: solid thin #494848;
+    border: solid thin #323232;
     transition: all 0.4s;
 }
 
@@ -80,8 +106,9 @@ html {
 }
 
 .container nav i {
-    font-size: 3rem;
+    font-size: 4rem;
     cursor: pointer;
+    color: #323232;
 }
 
 .grid {
@@ -89,9 +116,9 @@ html {
     max-width: 1250px;
     justify-content: center;
     margin: auto;
-    gap: 35px;
+    gap: 38px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
-    padding-bottom: 50px;
+    padding-bottom: 38px;
 }
 
 button:hover {
@@ -99,16 +126,16 @@ button:hover {
 }
 
 .item {
-    background-color: #fff;
-    border-radius: 10px 10px 10px 10px;
-    border: solid thin #e1e1e1;
+    background-color: #323232;
+    border-radius: 5px 5px 5px 5px;
+    border:color(from color srgb r g b);
 }
 
 .item img {
     width: 100%;
     height: auto;
     object-fit:cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
     
 }
 .item:hover{
@@ -146,17 +173,17 @@ button:hover {
 
 .info h3,
 .info p {
-    color: #222;
+    color: #DDD0C8;
     margin-bottom: 15px;
 }
 
 .info button {
     padding: 1rem;
     width: 100%;
-    background-color: #33c3f0;
+    background-color: #DDD0C8;
     border: none;
     outline: none;
-    color: #ffff;
+    color: #323232;
     text-transform: uppercase;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -165,20 +192,20 @@ button:hover {
 }
 
 .info button:hover {
-    background-color: #2da0c3;
+    background-color: #dbc5b7;
     transition: all 0.3s;
 }
 
 /*Acomodar elementos carritos de compra*/
-.lista-funkos {
+.lista-funkos div {
     display: none;
     text-align: center;
     align-items: center;
     padding: 10px 0 0 0;
-    border-top: solid thin gray;
+    border-top: solid thin #323232;
 }
 
-.container nav i:hover .buy-card > .lista-funkos {
+.container nav i:hover .buy-card > .lista-funkos div{
     display: flex;
 }
 
@@ -197,8 +224,8 @@ button:hover {
 }
 
 .lista-funkos p:last-child span {
-    background-color: rgb(201, 47, 47);
+    background-color: #c2aea2;
     border-radius: 50%;
     padding: 5px 10px;
-    color: #fff;
+    color: #323232;
 }
