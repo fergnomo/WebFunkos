@@ -5,17 +5,30 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+  }
+  
 html {
     font-size: 62.5%;
 }
 
 body {
-    background-color: #DDD0C8
+    background-color: #c2aea2
 }
 
-
+footer {
+    display: flex;
+    background-color: transparent;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    flex-direction: column;
+}
 .container {
-    background-color: #DDD0C8;
+    background-color: #c2aea2;
 }
 
 .container nav {
@@ -25,18 +38,26 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    background-color: #c2aea2;
+    background-color: #DDD0C8;
     margin-bottom: 15px;
     color: #323232;
+}
+
+.fondo-tienda {
+    background-color: #DDD0C8;
+    max-width: 1300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    margin: auto;
+    padding: 8px 8px 8px 8px;
+    
 }
 
 .nombre-pagina{
     font-family: "Poetsen One", sans-serif;
     font-weight: 999;
     font-size: 7rem;
-    margin: 0 0 0 0;
+    margin: 0 0 10px 0;
     color: #323232;
-    cursor: default;
 }
 
 .tienda-funkos p {
@@ -44,8 +65,8 @@ body {
     justify-content: center;
     font-family: "Poetsen One", sans-serif;
     font-weight: 300;
-    font-size: 4rem;
-    margin-bottom: 15px;
+    font-size: 6rem;
+    margin: 8px 0 30px 0;
     color: #323232;
     cursor: default;
     text-align: center;
@@ -228,4 +249,59 @@ button:hover {
     border-radius: 50%;
     padding: 5px 10px;
     color: #323232;
+}
+
+.grid-redes {
+    display: grid;
+    max-width: 180px;
+    max-height: 40px;
+    margin: 8px 8px 8px auto;
+    padding-bottom: 50px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 4fr);
+}
+
+.links {
+    display: flex;
+    margin: 8px 8px 8px 8px;
+    padding-bottom: 50px;
+    gap: 0;
+    justify-content: flex-end;
+}
+
+.links p {
+    text-align: right;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 999;
+    font-size: 2.2rem;
+    margin: 10px 50px 0 0;
+    color: #323232;
+    cursor: pointer;
+}
+
+.cults {
+    height: 35px;
+    width: 35px;
+}
+.x {
+    height: 35px;
+    width: 35px;
+}
+.insta {
+    height: 35px;
+    width: 35px;   
+}
+.twitch {
+    height: 35px;
+    width: 35px; 
+}
+
+.pie-pagina{
+    text-align: right;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 999;
+    font-size: 2.2rem;
+    margin: 10px 50px 0 0;
+    color: #323232;
+    cursor: default;
 }
