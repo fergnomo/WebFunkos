@@ -13,8 +13,28 @@ html {
     font-size: 62.5%;
 }
 
-body {
+.inicio {
     background-color: #c2aea2
+}
+
+.funkos {
+    background-color: #c2aea2
+}
+
+.container-links {
+    background-color: #c2aea2;
+}
+
+.container-links nav {
+    display: flex;
+    width: 100%;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #DDD0C8;
+    margin-bottom: 15px;
+    color: #323232;
 }
 
 footer {
@@ -32,9 +52,9 @@ footer {
 }
 
 .container nav {
+    display: flex;
     width: 100%;
     font-size: 3rem;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
@@ -261,20 +281,18 @@ button:hover {
     grid-template-columns: repeat(4, 4fr);
 }
 
-.links {
+
+.enlaces {
     display: flex;
-    margin: 8px 8px 8px 8px;
-    padding-bottom: 50px;
-    gap: 0;
+    margin: 8px 8px 17px 8px;
     justify-content: flex-end;
 }
-
-.links p {
+.enlaces p {
     text-align: right;
     font-family: "Poetsen One", sans-serif;
     font-weight: 999;
-    font-size: 2.2rem;
-    margin: 10px 50px 0 0;
+    font-size: 3.5rem;
+    margin: 0px 15px 0 0;
     color: #323232;
     cursor: pointer;
 }
@@ -304,4 +322,8 @@ button:hover {
     margin: 10px 50px 0 0;
     color: #323232;
     cursor: default;
+}
+
+.derecha {
+    display: flex;
 }
